@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <!--Header and Nav Bar-->
+  <header id="header" class="navbar">
+    <nav id="nav-bar">
+    <a href="#top"><img id="header-img" src="https://i.pinimg.com/originals/dd/db/ea/dddbea5fe274061fa420385210b90987.png" alt="header-img"></a>
+      <a href="#pricing" class="nav-link price">Pricing</a>
+      <a href="#services" class="nav-link service">Services</a>
+      <a href="#about-us" class="nav-link about">About Us</a>
+    </nav>
+  </header>
+
+  <body>
+    <!--Section 1: About Us-->
+    <section id="about-us">
+      <h2 class="section-title">About Us</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/4lSic8IZKZE"></iframe>
+    </section>
+
+    <!--Section 2: Services-->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="icon-service">
+          <img src="https://cdn-icons-png.flaticon.com/512/1112/1112009.png">
+        </div>
+        <div class="description-service">
+          We have the best engineers and architects who will develop great proyects for you.
+        </div>
+
+        <div class="icon-service">
+          <img src="https://cdn-icons-png.flaticon.com/512/1995/1995451.png">
+        </div>
+        <div class="description-service">
+          We make sure that the construction process and quality of the product is excepcional.
+         </div>
+
+         <div class="icon-service">
+          <img src="https://cdn2.iconfinder.com/data/icons/strongicon-vol-15/24/home-075-okay-512.png">
+         </div>
+         <div class="description-service">
+           We take care of both the proyect and the construction, you only have to specify your needs.
+         </div>
+
+    </section>
+
+    <!--Section 3: Pricing-->
+    <section id="pricing">
+      <h2 class="section-title">Pricing</h2>
+      <div class="pricing-box">
+        <div class="item">
+          <h4>Proyect Managment</h4>
+          <h3>USD 1.000</h3>
+          <p class="desc">We devolp only the proyect.</p>
+          <button class="select">Select</button>
+        </div>
+        <div class="item">
+          <h4>Construction Managment</h4>
+          <h3>USD 2.000</h3>
+          <p class="desc">We take care of the construction process.</p>
+          <button class="select">Select</button>
+        </div>
+        <div class="item">
+          <h4>All in One</h4>
+          <h3>USD 5.000</h3>
+          <p class="desc">We devolp the proyect and take care of everything at the contruction site.</p>
+          <button class="select">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Form-->
+    <section class="form-div">
+      <h3>Please leave us your email</h3>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" class="box" type="email" name="email" placeholder="Enter your email"><br>
+        <input id="submit" class="button" type="submit" text="Submit">
+      </form>
+    </section>
+  </body>
+</html>

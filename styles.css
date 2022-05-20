@@ -1,0 +1,230 @@
+/*Header and Nav Bar*/
+#nav-bar {
+  font-family: 'Poppins', serif;
+  background-color: #8E3200;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+}
+#nav-bar img {
+  float: left;
+  height: 80%;
+  padding: 10px 50px;
+}
+.nav-link {
+  float: right;
+  display: flex;
+  text-align: center;
+  padding: 23px;
+  color: #FFEBC1;
+  text-decoration: none;
+  height: 70px;
+}
+.nav-link:hover {
+  background-color: #D7A86E;
+  color: #A64B2A;
+}
+
+/*Body*/
+body {
+  font-family: 'Poppins', serif;
+  background-color: #FFEBC1;
+  color: #8E3200;
+  text-align: center;
+}
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-title {
+  font-weight: 800;
+}
+
+/*Section 1: About Us*/
+#video {
+  width: 50%;
+  height: 60vh;
+}
+/*Section 2: Services*/
+#services {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "icon description"
+    "icon description"
+    "icon description";
+  padding: 60px 5% 60px 5%;
+  justify-content: start;
+}
+#services h2 {
+  grid-area: header;
+  align-self: center;
+}
+#services img {
+  height: 50px;
+  width: 50px;
+}
+.icon-service {
+  justify-self: end;
+  align-self: center;
+}
+.description-service {
+  justify-self: start;
+  align-self: center;
+  padding-left: 10%;
+  text-align: justify;
+}
+
+/*Section 3: Pricing*/
+.pricing-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 10%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  border: 1px black solid;
+}
+.item h4 {
+  display: flex;
+  margin-top: 0;
+  height: 50px;
+  background-color: #D7A86E;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.item h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.desc {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+.select {
+  width: 40%;
+  margin: auto auto 5% auto;
+  border-radius: 3px;
+  color: #FFEBC1;
+  background: #8E3200;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border: none;
+}
+.select:hover {
+  background: #A64B2A;
+  text-decoration: none;
+}
+
+/*Form*/
+.box {
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+  width: 30%;
+  padding-left: 1%;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 1%;
+}
+.box::placeholder {
+  font-family: 'Poppins', serif;
+}
+.box:focus {
+  outline: none;
+}
+.button {
+  border-radius: 3px;
+  color: #FFEBC1;
+  background: #8E3200;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+}
+.button:hover {
+  background: #A64B2A;
+  text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+  /*Header and Navbar*/
+  #nav-bar {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #nav-bar img {
+    float: none;
+    height: 40px;
+    padding: 10px;
+  }
+  .nav-link {
+    width: 100%;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    height: 10px;
+  }
+  .price {
+    order: 3;
+  }
+  .about {
+    order: 1;
+  }
+  .service {
+    order: 2;
+  }
+
+  /*Body*/
+  section {
+    padding-top: 170px;
+  }
+
+  /*Section 1: About Us*/
+  #video {
+    width: 70%;
+    height: 50vh;
+  }
+
+  /*Section 2: Services*/
+  #services {
+    padding-top: 170px;
+  }
+
+  /*Section 3: Pricing*/
+  .pricing-box {
+    flex-direction: column;
+  }
+  .item {
+    margin: 10px 25%;
+  }
+
+  /*Form*/
+  .form-div {
+    padding-top: 0;
+  }
+  .box {
+    width: 40%;
+  }
+}
